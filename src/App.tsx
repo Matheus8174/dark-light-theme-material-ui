@@ -1,6 +1,16 @@
+import { Typography } from "@mui/material"
+import ToggleThemeButton from "./components/ToggleThemeButton"
+import ColorModeContext from "./contexts/ColorModeContext"
+
+
 function App() {
   return (
-    <div />
+    <ColorModeContext>
+      <ToggleThemeButton />
+      <Typography sx={{ color: 'secondary' }}>
+        Hello world
+      </Typography>
+    </ColorModeContext>
   )
 }
 
